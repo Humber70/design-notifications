@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Humber70/design-notifications/issues"
   },
-  "homepage": "https://github.com/Humber70/design-notifications#readme"
+  "homepage": "https://github.com/Humber70/design-notifications#readme",
+  "devDependencies": {
+    "sass": "1.62.1"
+  }
 }
