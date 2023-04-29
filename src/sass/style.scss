@@ -3,6 +3,14 @@
     src: url("../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
 }
 
+@mixin flex ($justify: initial, $direction:initial){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
 /*$Colors--*/
 $color-red-primary: hsl(1, 90%, 64%);
 $color-red-primary: hsl(1, 90%, 64%);
@@ -41,12 +49,7 @@ body {
 // header
 .header {
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-
+    @include flex (space-between); // --> flex (justify-content, flex-direction)
         .check {
             button {
                 border: none;
@@ -61,9 +64,7 @@ body {
         }
 
         .notification {
-            display: inherit;
-            align-items: inherit;
-
+            @include flex();
             .count {
                 font-weight: $weight-bold;
                 padding: 10px 15px;
@@ -84,9 +85,7 @@ body {
     flex-direction: column;
 
     .users {
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap;
+        @include flex();
         margin-bottom: 20px;
         padding: 10px;
     
