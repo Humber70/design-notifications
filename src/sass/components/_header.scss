@@ -1,0 +1,29 @@
+// header
+.header {
+  width: 100%;
+  @include flex(space-between); // --> flex (justify-content, flex-direction)
+  .check {
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: $weight-medium;
+        color: $color-blue-primary;
+      }
+    }
+  }
+
+  .notification {
+    @include flex();
+    .count {
+      font-weight: $weight-bold;
+      padding: 10px 15px;
+      margin-left: 10px;
+      border-radius: 7px;
+      color: $color-white-neutral;
+      background-color: $color-blue-primary;
+    }
+  }
+}

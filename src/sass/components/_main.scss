@@ -1,0 +1,98 @@
+.container-users {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .users {
+    @include flex();
+    margin-bottom: 20px;
+    padding: 10px;
+
+    border-radius: 7px;
+    background-color: $color-very-light-neutral;
+
+    .img-post {
+      width: 100%;
+      cursor: pointer;
+      margin-left: auto;
+      max-width: 45px;
+      justify-content: end;
+    }
+
+    .profile {
+      width: 50px;
+      object-fit: contain;
+      margin-right: 20px;
+    }
+
+    .user_name {
+      p {
+        margin: 0px;
+
+        .name {
+          margin: auto 0;
+          cursor: pointer;
+          font-weight: $weight-bold;
+          color: $color-dark-blue-neutral;
+
+          &:hover {
+            color: $color-blue-primary;
+          }
+        }
+
+        .role {
+          cursor: pointer;
+          font-weight: $weight-bold;
+          color: $color-dark-grayish-blue-neutral;
+
+          &:hover {
+            transition: color 0.3s ease;
+            color: $color-blue-primary;
+          }
+        }
+
+        .role_chess {
+          cursor: pointer;
+          font-weight: $weight-bold;
+          color: $color-blue-primary;
+        }
+
+        .span {
+          display: inline-block;
+          border-radius: 50%;
+          margin-left: 5px;
+          padding: 5px;
+          background-color: $color-red-primary;
+          width: 1px;
+        }
+
+        span {
+          margin: 0 5px;
+          font-weight: $weight-medium;
+          color: $color-dark-grayish-blue-neutral;
+        }
+      }
+
+      .time {
+        color: $color-grayish-blue-neutral;
+
+        .message {
+          width: 90%;
+          margin-top: 10px;
+          line-height: 1.3em;
+          padding: 20px;
+          cursor: pointer;
+          color: $color-dark-grayish-blue-neutral;
+          border: 1px solid $color-grayish-blue-neutral;
+          border-radius: 6px;
+          background-color: $color-white-neutral;
+
+          &:hover {
+            transition: background-color 0.4s ease;
+            background-color: $color-light-grayish-2-neutral;
+          }
+        }
+      }
+    }
+  }
+}
