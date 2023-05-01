@@ -22,11 +22,11 @@
   },
   "homepage": "https://github.com/Humber70/design-notifications#readme",
   "devDependencies": {
-    "@babel/cli": "^7.21.5",
-    "@babel/preset-env": "^7.21.5",
-    "babel": "^6.23.0",
+    "@babel/cli": "7.21.5",
+    "@babel/preset-env": "7.21.5",
+    "babel": "6.23.0",
     "prettier": "2.8.8",
     "sass": "1.62.1",
-    "uglify-js": "^3.17.4"
+    "uglify-js": "3.17.4"
   }
 }
