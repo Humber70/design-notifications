@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Humber70/design-notifications#readme",
   "devDependencies": {
+    "prettier": "^2.8.8",
     "sass": "1.62.1"
   }
 }

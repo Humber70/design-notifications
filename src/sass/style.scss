@@ -1,14 +1,14 @@
 @font-face {
-    font-family: "plus";
-    src: url("../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+  font-family: "plus";
+  src: url("../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
 }
 
-@mixin flex ($justify: initial, $direction:initial){
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: center;
-    flex-wrap: nowrap;
+@mixin flex($justify: initial, $direction: initial) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 /*$Colors--*/
@@ -31,166 +31,158 @@ $weight-medium: 500;
 $weight-bold: 800;
 
 body {
-    background-color: $color-very-light-neutral;
-    font-family: $family;
-    font-size: $body-size;
+  background-color: $color-very-light-neutral;
+  font-family: $family;
+  font-size: $body-size;
 }
 
-
 .container {
-    width: 70%;
-    margin: 50px auto;
-    padding: 50px;
-    border-radius: 7px;
-    box-shadow: 0px 0px 30px $color-light-grayish-2-neutral;
-    background-color: $color-white-neutral;
+  width: 70%;
+  margin: 50px auto;
+  padding: 50px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 30px $color-light-grayish-2-neutral;
+  background-color: $color-white-neutral;
 }
 
 // header
 .header {
-    width: 100%;
-    @include flex (space-between); // --> flex (justify-content, flex-direction)
-        .check {
-            button {
-                border: none;
-                background-color: transparent;
-                cursor: pointer;
-            
-                    &:hover {
-                        font-weight: $weight-medium;
-                        color: $color-blue-primary;
-                    }
-                }
-        }
+  width: 100%;
+  @include flex(space-between); // --> flex (justify-content, flex-direction)
+  .check {
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
 
-        .notification {
-            @include flex();
-            .count {
-                font-weight: $weight-bold;
-                padding: 10px 15px;
-                margin-left: 10px;
-                border-radius: 7px;
-                color: $color-white-neutral;
-                background-color: $color-blue-primary;
-            }
+      &:hover {
+        font-weight: $weight-medium;
+        color: $color-blue-primary;
+      }
+    }
+  }
 
-        }
+  .notification {
+    @include flex();
+    .count {
+      font-weight: $weight-bold;
+      padding: 10px 15px;
+      margin-left: 10px;
+      border-radius: 7px;
+      color: $color-white-neutral;
+      background-color: $color-blue-primary;
+    }
+  }
 }
 
-//main 
+//main
 
 .container-users {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
-    .users {
-        @include flex();
-        margin-bottom: 20px;
-        padding: 10px;
-    
-        border-radius: 7px;
-        background-color: $color-very-light-neutral;
+  .users {
+    @include flex();
+    margin-bottom: 20px;
+    padding: 10px;
 
-        .img-post {
-            width: 100%;
-            cursor: pointer;
-            margin-left: auto;
-            max-width: 45px;
-            justify-content: end;
-        }
+    border-radius: 7px;
+    background-color: $color-very-light-neutral;
 
-
-        .profile {
-            width: 50px;
-            object-fit: contain;
-            margin-right: 20px;
-        }
-
-        .user_name {
-
-            p {
-                margin: 0px;
-
-                .name {
-                        margin: auto 0;
-                        cursor: pointer;
-                        font-weight: $weight-bold;
-                        color: $color-dark-blue-neutral;
-                
-                        &:hover {
-                            color: $color-blue-primary;
-                        }
-                    }
-
-                .role {
-                    cursor: pointer;
-                    font-weight: $weight-bold;
-                    color: $color-dark-grayish-blue-neutral;
-
-                    &:hover {
-                        transition: color 0.3s ease;
-                        color: $color-blue-primary;
-                    }
-                }
-
-                .role_chess {
-                    cursor: pointer;
-                    font-weight: $weight-bold;
-                    color: $color-blue-primary;
-                }
-
-                .span {
-                    display: inline-block;
-                    border-radius: 50%;
-                    margin-left: 5px;
-                    padding: 5px;
-                    background-color: $color-red-primary;
-                    width: 1px;
-                }
-
-                span {
-                    margin: 0 5px;
-                    font-weight: $weight-medium;
-                    color: $color-dark-grayish-blue-neutral;
-                }
-              
-            }
-
-
-            .time {
-
-                color: $color-grayish-blue-neutral;
-
-                .message {
-                    width: 90%;
-                    margin-top: 10px;
-                    line-height: 1.3em;
-                    padding: 20px;
-                    cursor: pointer;
-                    color: $color-dark-grayish-blue-neutral;
-                    border: 1px solid $color-grayish-blue-neutral;
-                    border-radius: 6px;
-                    background-color: $color-white-neutral;
-
-                    &:hover {
-                        transition: background-color 0.4s ease;
-                        background-color: $color-light-grayish-2-neutral;
-                    }
-                }
-            }
-
-        }
+    .img-post {
+      width: 100%;
+      cursor: pointer;
+      margin-left: auto;
+      max-width: 45px;
+      justify-content: end;
     }
+
+    .profile {
+      width: 50px;
+      object-fit: contain;
+      margin-right: 20px;
+    }
+
+    .user_name {
+      p {
+        margin: 0px;
+
+        .name {
+          margin: auto 0;
+          cursor: pointer;
+          font-weight: $weight-bold;
+          color: $color-dark-blue-neutral;
+
+          &:hover {
+            color: $color-blue-primary;
+          }
+        }
+
+        .role {
+          cursor: pointer;
+          font-weight: $weight-bold;
+          color: $color-dark-grayish-blue-neutral;
+
+          &:hover {
+            transition: color 0.3s ease;
+            color: $color-blue-primary;
+          }
+        }
+
+        .role_chess {
+          cursor: pointer;
+          font-weight: $weight-bold;
+          color: $color-blue-primary;
+        }
+
+        .span {
+          display: inline-block;
+          border-radius: 50%;
+          margin-left: 5px;
+          padding: 5px;
+          background-color: $color-red-primary;
+          width: 1px;
+        }
+
+        span {
+          margin: 0 5px;
+          font-weight: $weight-medium;
+          color: $color-dark-grayish-blue-neutral;
+        }
+      }
+
+      .time {
+        color: $color-grayish-blue-neutral;
+
+        .message {
+          width: 90%;
+          margin-top: 10px;
+          line-height: 1.3em;
+          padding: 20px;
+          cursor: pointer;
+          color: $color-dark-grayish-blue-neutral;
+          border: 1px solid $color-grayish-blue-neutral;
+          border-radius: 6px;
+          background-color: $color-white-neutral;
+
+          &:hover {
+            transition: background-color 0.4s ease;
+            background-color: $color-light-grayish-2-neutral;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 500px) {
-    .header {
-        margin-bottom: 1.5rem;
-    }
+  .header {
+    margin-bottom: 1.5rem;
+  }
 
-    .container {
-        width: auto;
-        margin: 0;
-    }
+  .container {
+    width: auto;
+    margin: 0;
+  }
 }
