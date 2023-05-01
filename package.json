@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./src/sass/style.scss ./src/css/style.css --no-source-map",
-    "build-sass": "sass --watch ./src/sass/style.scss ./dist/css/style.css --no-source-map"
+    "build-sass": "sass --watch ./src/sass/style.scss --style compressed ./dist/css/style.css --no-source-map",
+    "babel": "babel ./src/js/script.js -o ./src/js/script-babel.js",
+    "uglify": "uglifyjs ./src/js/script-babel.js -o ./dist/js/script.js",
+    "build-js": "npm run babel && npm run uglify"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,11 @@
   },
   "homepage": "https://github.com/Humber70/design-notifications#readme",
   "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
+    "babel": "^6.23.0",
     "prettier": "2.8.8",
-    "sass": "1.62.1"
+    "sass": "1.62.1",
+    "uglify-js": "^3.17.4"
   }
 }
