@@ -1,32 +1,21 @@
 {
-  "name": "design-notifications",
+  "name": "notifications-pages",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "sass": "sass --watch ./src/sass/style.scss ./src/css/style.css --no-source-map",
-    "build-sass": "sass --watch ./src/sass/style.scss --style compressed ./dist/css/style.css --no-source-map",
-    "babel": "babel ./src/js/script.js -o ./src/js/script-babel.js",
-    "uglify": "uglifyjs ./src/js/script-babel.js -o ./dist/js/script.js",
-    "build-js": "npm run babel && npm run uglify"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Humber70/design-notifications.git"
-  },
   "keywords": [],
-  "author": "",
+  "author": "humber70",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Humber70/design-notifications/issues"
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "homepage": "https://github.com/Humber70/design-notifications#readme",
   "devDependencies": {
-    "@babel/cli": "7.21.5",
-    "@babel/preset-env": "7.21.5",
-    "babel": "6.23.0",
-    "prettier": "2.8.8",
-    "sass": "1.62.1",
-    "uglify-js": "3.17.4"
+    "autoprefixer": "10.4.20",
+    "tailwindcss": "3.4.17",
+    "postcss": "8.5.1",
+    "vite": "6.0.11"
   }
 }
