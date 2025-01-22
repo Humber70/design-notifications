@@ -8,71 +8,81 @@
     <title>Notifications page</title>
   </head>
   <body>
-    <main class="mx-2 lg:mx-auto lg:max-w-[1024px]">
+    <main class="p-[1rem] lg:mx-auto lg:max-w-[1024px]">
       <div class="flex justify-between items-center">
         <div class="flex items-center gap-2">
-          <h1 class="font-bold">Notifications</h1>
-          <span class="rounded-md bg-blue-400 text-white px-3 py-2">3</span>
+          <h1 class="font-[--font-800] text-2xl">Notifications</h1>
+          <span class="rounded-md bg-[--blue] font-[--font-800] text-[--white] px-3 py-1">3</span>
         </div>
         <button>Mark all as read</button>
       </div>
-      <ul class="notifications">
-        <li>
+      <ul class="notifications gap-2 flex flex-col">
+        <li class="flex gap-2 items-center p-3 rounded-sm">
           <img src="/assets/images/avatar-mark-webber.webp" alt="avatar-mark-webber"/>
-          <h2>Mark Webber</h2>
-          <p class="actions">reacted to your recent post</p>
-          <p class="post">My first tournament today!•</p>
-          <time>1m ago</time>
+          <div>
+            <h2 class="text-lg">Mark Webber</h2>
+            <p class="actions">reacted to your recent post <span class="post">My first tournament today!</span></p>
+            <time>1m ago</time>
+          </div>
         </li>
 
-        <li>
+        <li class="flex gap-2 items-center p-3 rounded-sm">
           <img src="/assets/images/avatar-angela-gray.webp" alt="avatar-angela-gray"/>
-          <h2>Angela Gray</h2>
-          <p class="actions">followed you</p>
-          <time>5m ago</time>
+          <div>
+            <h2 class="text-lg">Angela Gray</h2>
+            <p class="actions">followed you</p>
+            <time>5m ago</time>
+          </div>
         </li>
 
-        <li>
+        <li class="flex gap-2 items-center p-3 rounded-sm">
           <img src="/assets/images/avatar-jacob-thompson.webp" alt="avatar-jacob-thompson"/>
-          <h2>Jacob Thompson</h2>
-          <p class="actions">has joined your group</p>
-          <span class="group">Chess Club</span>
-          <time>1 day ago</time>
+          <div>
+            <h2 class="text-lg">Jacob Thompson</h2>
+            <p class="actions">has joined your group <span class="group">Chess Club</span></p>
+            <time>1 day ago</time>
+          </div>
         </li>
 
-
-        <li>
+        <li class="flex gap-2 items-center p-3 rounded-sm">
           <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-rizky-hasanuddin"/>
-          <h2>Rizky Hasanuddin</h2>
-          <p class="actions">sent you a private message</p>
-          <time>5 days ago</time>
-          <p class="messages">
-            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
-          </p>
+          <div>
+            <h2 class="text-lg">Rizky Hasanuddin</h2>
+            <p class="actions">sent you a private message</p>
+            <p class="messages">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+            <time>5 days ago</time>
+          </div>
         </li>
 
-        <li>
+        <li class="flex gap-2 items-center p-3 rounded-sm">
           <img src="/assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith"/>
-          <h2>Kimberly Smith</h2>
-          <p class="actions">commented on your picture</p>
-          <img src="/assets/images/image-chess.webp" alt="image-small-chess"/>
-          <time>1 weeks ago</time>
+          <div>
+            <h2 class="text-lg">Kimberly Smith</h2>
+            <p class="actions">commented on your picture</p>
+            <img src="/assets/images/image-chess.webp" alt="image-small-chess"/>
+            <time>1 weeks ago</time>
+          </div>
         </li>
 
-        <li>
+        <li class="flex gap-2 items-center p-3 rounded-sm">
           <img src="/assets/images/avatar-nathan-peterson.webp" alt="avatar-nathan-peterson"/>
-          <h2>Nathan Peterson</h2>
-          <p class="actions">reacted to your recent post</p>
-          <p class="post">5 end-game strategies to increase your win rate</p>
-          <time>2 weeks ago</time>
+          <div>
+            <h2 class="text-lg">Nathan Peterson</h2>
+            <p class="actions">reacted to your recent post
+              <span class="post">5 end-game strategies to increase your win rate</span>
+            </p>
+            <time>2 weeks ago</time>
+          </div>
         </li>
 
-        <li>
+        <li class="flex gap-2 items-center p-3 rounded-sm">
           <img src="/assets/images/avatar-anna-kim.webp" alt="avatar-anna-kim"/>
-          <h2>Anna Kim</h2>
-          <p class="actions">left the group</p>
-          <span class="group">Chess Club</span> 
-          <time>2 weeks ago</time>
+          <div>
+            <h2 class="text-lg">Anna Kim</h2>
+            <p class="actions">left the group <span class="group">Chess Club</span> 
+            </p>
+            <time>2 weeks ago</time>
+          </div>
         </li>
       </ul>
 
