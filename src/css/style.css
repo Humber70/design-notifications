@@ -29,6 +29,9 @@
 
   --font-500: 500;
   --font-800: 800;
+
+  /* shadow */
+  --main-shadow: var(--light-grayish-blue-2);
 }
 
 ul {
@@ -37,6 +40,7 @@ ul {
 
 .unread::after {
   position: absolute;
+  padding: 3px;
   right: 10px;
   content: '';
   width: 10px;
@@ -49,12 +53,14 @@ img {
   width: 45px;
   object-fit: contain;
   align-self: flex-start;
+}
 
+.nose {
+  justify-self: flex-end;
 }
 
 body {
   font-family: var(--font-body);
-  background-color: white;
 }
 
 .notifications li.unread {
@@ -91,5 +97,6 @@ time {
 
 .group {
   color: var(--blue);
+  cursor: pointer;
   font-weight: var(--font-800);
 }

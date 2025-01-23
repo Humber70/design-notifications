@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="./src/css/style.css" />
     <title>Notifications page</title>
   </head>
   <body>
-    <main class="p-[1rem] lg:mx-auto lg:max-w-[1024px]">
+    <main class="p-[2rem] bg-[--white] lg:mx-auto lg:max-w-[750px] lg:my-10 lg:rounded-xl lg:shadow-custom">
       <div class="flex justify-between items-center mb-8">
         <div class="flex items-center gap-2">
           <h1 class="font-[--font-800] text-2xl">Notifications</h1>
           <span id="countNotification" class="rounded-md bg-[--blue] font-[--font-800] text-[--white] px-3 py-1">3</span>
         </div>
-        <button id="markAll">Mark all as read</button>
+        <button class="hover:text-[--blue] text-[--dark-grayish-blue] font-[--font-500]" id="markAll">Mark all as read</button>
       </div>
       <ul class="notifications gap-4 flex flex-col">
 
@@ -61,18 +62,20 @@
               <span class="actions">sent you a private message</span>
             </p>
             <time>5 days ago</time>
-            <p class="messages py-4 px-3 mt-2">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+            <p class="messages py-4 px-3 mt-2 hover:bg-[--light-grayish-blue-2] hover:cursor-pointer">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
           </div>
         </li>
 
-        <li class="flex gap-5 items-center p-4 rounded-sm">
-          <img src="/assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith"/>
-          <div>
-            <p>
-              <span class="name-user text-lg">Kimberly Smith</span>
-              <span class="actions">commented on your picture</span>
-            </p>
-            <time>1 weeks ago</time>
+        <li class="flex gap-5 items-center p-4 rounded-sm justify-between">
+          <div class="flex items-center gap-5">
+            <img src="/assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith"/>
+            <div>
+              <p>
+                <span class="name-user text-lg">Kimberly Smith</span>
+                <span class="actions">commented on your picture</span>
+              </p>
+              <time>1 weeks ago</time>
+            </div>
           </div>
           <img src="/assets/images/image-chess.webp" alt="image-small-chess"/>
         </li>
