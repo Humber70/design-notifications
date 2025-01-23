@@ -31,9 +31,23 @@
   --font-800: 800;
 }
 
+ul {
+  position: relative;
+}
+
+.unread::after {
+  position: absolute;
+  right: 10px;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--red);
+  border-radius: 50%;
+}
+
 img {
-  width: 60px;
-  object-fit: cover;
+  width: 45px;
+  object-fit: contain;
   align-self: flex-start;
 
 }
@@ -43,8 +57,14 @@ body {
   background-color: white;
 }
 
-.notifications li {
+.notifications li.unread {
   background-color: var(--very-light-grayish-blue);
+}
+
+.messages {
+  border-radius: .7rem;
+  border: 1px solid var(--grayish-blue);
+  color: var(--dark-grayish-blue);
 }
 
 .actions {
@@ -52,7 +72,8 @@ body {
 }
 
 .name-user {
-  color: var(--very-dark-blue);
+  color: black;
+  font-weight: var(--font-800);
 }
 
 .reaction {
@@ -70,4 +91,5 @@ time {
 
 .group {
   color: var(--blue);
+  font-weight: var(--font-800);
 }
