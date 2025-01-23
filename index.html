@@ -9,77 +9,93 @@
   </head>
   <body>
     <main class="p-[1rem] lg:mx-auto lg:max-w-[1024px]">
-      <div class="flex justify-between items-center">
+      <div class="flex justify-between items-center mb-8">
         <div class="flex items-center gap-2">
           <h1 class="font-[--font-800] text-2xl">Notifications</h1>
-          <span class="rounded-md bg-[--blue] font-[--font-800] text-[--white] px-3 py-1">3</span>
+          <span id="countNotification" class="rounded-md bg-[--blue] font-[--font-800] text-[--white] px-3 py-1">3</span>
         </div>
-        <button>Mark all as read</button>
+        <button id="markAll">Mark all as read</button>
       </div>
-      <ul class="notifications gap-2 flex flex-col">
-        <li class="flex gap-2 items-center p-3 rounded-sm">
+      <ul class="notifications gap-4 flex flex-col">
+
+        <li class="flex gap-5 items-center p-4 rounded-sm unread">
           <img src="/assets/images/avatar-mark-webber.webp" alt="avatar-mark-webber"/>
           <div>
-            <h2 class="text-lg">Mark Webber</h2>
-            <p class="actions">reacted to your recent post <span class="post">My first tournament today!</span></p>
+            <p>
+              <span class="name-user text-lg">Mark Webber</span>
+              <span class="actions">reacted to your recent post</span>
+              <span class="post">My first tournament today!</span>
+            </p>
             <time>1m ago</time>
           </div>
         </li>
 
-        <li class="flex gap-2 items-center p-3 rounded-sm">
+        <li class="flex gap-5 items-center p-4 rounded-sm unread">
           <img src="/assets/images/avatar-angela-gray.webp" alt="avatar-angela-gray"/>
           <div>
-            <h2 class="text-lg">Angela Gray</h2>
-            <p class="actions">followed you</p>
+            <p>
+              <span class="name-user text-lg">Angela Gray</span>
+              <span class="actions">followed you</span>
+            </p>
             <time>5m ago</time>
           </div>
         </li>
 
-        <li class="flex gap-2 items-center p-3 rounded-sm">
+        <li class="flex gap-5 items-center p-4 rounded-sm unread">
           <img src="/assets/images/avatar-jacob-thompson.webp" alt="avatar-jacob-thompson"/>
           <div>
-            <h2 class="text-lg">Jacob Thompson</h2>
-            <p class="actions">has joined your group <span class="group">Chess Club</span></p>
+            <p>
+              <span class="name-user text-lg">Jacob Thompson</span>
+              <span class="actions">has joined your group</span>
+              <span class="group">Chess Club</span>
+            </p>
             <time>1 day ago</time>
           </div>
         </li>
 
-        <li class="flex gap-2 items-center p-3 rounded-sm">
+        <li class="flex gap-5 items-center p-4 rounded-sm">
           <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-rizky-hasanuddin"/>
           <div>
-            <h2 class="text-lg">Rizky Hasanuddin</h2>
-            <p class="actions">sent you a private message</p>
-            <p class="messages">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+            <p>
+              <span class="name-user text-lg">Rizky Hasanuddin</span>
+              <span class="actions">sent you a private message</span>
+            </p>
             <time>5 days ago</time>
+            <p class="messages py-4 px-3 mt-2">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
           </div>
         </li>
 
-        <li class="flex gap-2 items-center p-3 rounded-sm">
+        <li class="flex gap-5 items-center p-4 rounded-sm">
           <img src="/assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith"/>
           <div>
-            <h2 class="text-lg">Kimberly Smith</h2>
-            <p class="actions">commented on your picture</p>
-            <img src="/assets/images/image-chess.webp" alt="image-small-chess"/>
+            <p>
+              <span class="name-user text-lg">Kimberly Smith</span>
+              <span class="actions">commented on your picture</span>
+            </p>
             <time>1 weeks ago</time>
           </div>
+          <img src="/assets/images/image-chess.webp" alt="image-small-chess"/>
         </li>
 
-        <li class="flex gap-2 items-center p-3 rounded-sm">
+        <li class="flex gap-5 items-center p-4 rounded-sm">
           <img src="/assets/images/avatar-nathan-peterson.webp" alt="avatar-nathan-peterson"/>
           <div>
-            <h2 class="text-lg">Nathan Peterson</h2>
-            <p class="actions">reacted to your recent post
+            <p>
+              <span class="name-user text-lg">Nathan Peterson</span>
+              <span class="actions">reacted to your recent post</span>
               <span class="post">5 end-game strategies to increase your win rate</span>
             </p>
             <time>2 weeks ago</time>
           </div>
         </li>
 
-        <li class="flex gap-2 items-center p-3 rounded-sm">
+        <li class="flex gap-5 items-center p-4 rounded-sm">
           <img src="/assets/images/avatar-anna-kim.webp" alt="avatar-anna-kim"/>
           <div>
-            <h2 class="text-lg">Anna Kim</h2>
-            <p class="actions">left the group <span class="group">Chess Club</span> 
+            <p>
+              <span class="name-user text-lg">Anna Kim</span>
+              <span class="actions">left the group</span> 
+              <span class="group">Chess Club</span> 
             </p>
             <time>2 weeks ago</time>
           </div>
