@@ -18,7 +18,7 @@ Live Site URL: [Notifications page](https://page-notification-frontmentor.netlif
 ### Desktop - Mobile
 
 <div>
-  <img src="https://res.cloudinary.com/dgzl4erpc/image/upload/v1737739692/frontend-mentor/notifications-page/screenshot-desktop_spyals.png" alt="design-desktop">
-  <img src="https://res.cloudinary.com/dgzl4erpc/image/upload/v1737739692/frontend-mentor/notifications-page/screenshot-mobile_tdazii.png" alt="design-mobile-menu" style="width: 300px;">
+  <img src="https://res.cloudinary.com/dgzl4erpc/image/upload/v1737742493/frontend-mentor/notifications-page/screenshot-desktop_spyals.png" alt="design-desktop">
+  <img src="https://res.cloudinary.com/dgzl4erpc/image/upload/v1737742544/frontend-mentor/notifications-page/screenshot-mobile_tdazii.png" alt="design-mobile-menu" style="width: 300px;">
 </div>
 
