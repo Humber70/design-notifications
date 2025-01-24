@@ -77,6 +77,11 @@ body {
 .name-user {
   color: black;
   font-weight: var(--font-800);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--blue);
+  }
 }
 
 .reaction {
