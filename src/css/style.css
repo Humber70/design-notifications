@@ -34,19 +34,16 @@
   --main-shadow: var(--light-grayish-blue-2);
 }
 
-ul {
-  position: relative;
-}
-
 .unread::after {
-  position: absolute;
-  padding: 3px;
-  right: 10px;
   content: '';
-  width: 10px;
-  height: 10px;
+  display: inline-block;
+
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+
   background-color: var(--red);
-  border-radius: 50%;
+  border-radius: 1rem;
 }
 
 img {
@@ -63,7 +60,7 @@ body {
   font-family: var(--font-body);
 }
 
-.notifications li.unread {
+.notifications li.active {
   background-color: var(--very-light-grayish-blue);
 }
 
